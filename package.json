@@ -1,8 +1,12 @@
 {
   "devDependencies": {
-    "mocha": "^10.7.3"
+    "mocha": "^10.7.3",
+    "node-gyp": "^10.2.0"
   },
   "scripts": {
-  "test": "mocha"
-}
+    "test": "mocha"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0"
+  }
 }

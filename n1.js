@@ -74,8 +74,6 @@ function readTaskList(taskListPaths) {
 }
 
 
-
-
 /**
  * exports module
  */
