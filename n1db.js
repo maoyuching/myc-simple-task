@@ -25,6 +25,7 @@ const sqlite3 = require('better-sqlite3');
 // ddl_time：任务截止日期
 // status：任务状态，0表示未完成，1表示已完成
 // imporance：任务重要性，0表示不重要，1表示重要
+// is_deleted：是否删除，0表示未删除，1表示已删除
 const create_tasks_table = `
 CREATE TABLE tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -38,7 +39,8 @@ CREATE TABLE tasks (
     ddl_time TIMESTAMP,
     finish_time TIMESTAMP,
     status INTEGER DEFAULT 0,
-    imporance INTEGER DEFAULT 0
+    imporance INTEGER DEFAULT 0,
+    is_deleted INTEGER DEFAULT 0
 );      
 `
 
